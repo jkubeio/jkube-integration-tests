@@ -43,7 +43,7 @@
     <hamcrest.version>2.0.0.0</hamcrest.version>
     <quarkus.version>1.8.3.Final</quarkus.version>
     <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
-    <thorntail.version>2.5.0.Final</thorntail.version>
+    <thorntail.version>2.7.0.Final</thorntail.version>
     <vertx.version>3.9.1</vertx.version>
     <vertx.plugin.version>1.0.22</vertx.plugin.version>
     <wildfly.jar.plugin.version>2.0.1.Final</wildfly.jar.plugin.version>
