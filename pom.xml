@@ -29,7 +29,7 @@
     <revision>0.0.0-SNAPSHOT</revision>
     <java.version>1.8</java.version>
     <global.name>JKube :: Integration Tests</global.name>
-    <apache.maven.maven-compiler-plugin.version>3.8.1</apache.maven.maven-compiler-plugin.version>
+    <apache.maven.maven-compiler-plugin.version>3.8.1-jboss-2</apache.maven.maven-compiler-plugin.version>
     <apache.maven.maven-war-plugin.version>2.6</apache.maven.maven-war-plugin.version>
     <apache.maven-failsafe-plugin.version>3.0.0-M4</apache.maven-failsafe-plugin.version>
     <apache.maven.maven-invoker.version>3.0.1</apache.maven.maven-invoker.version>
