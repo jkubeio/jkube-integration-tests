@@ -38,7 +38,7 @@
     <jkube.version>1.4.0-SNAPSHOT</jkube.version>
     <com.fasterxml.jackson.core.version>2.11.0</com.fasterxml.jackson.core.version>
     <com.fasterxml.jackson.dataformat.yaml.version>2.11.0</com.fasterxml.jackson.dataformat.yaml.version>
-    <junit.version>5.6.2</junit.version>
+    <junit.version>5.7.2</junit.version>
     <license-maven-plugin.version>3.0</license-maven-plugin.version>
     <hamcrest.version>2.0.0.0</hamcrest.version>
     <quarkus.version>1.8.3.Final</quarkus.version>
