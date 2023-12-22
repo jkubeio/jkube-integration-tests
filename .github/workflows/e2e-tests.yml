@@ -26,8 +26,8 @@ permissions:
   contents: read
 
 env:
-  JKUBE_REPOSITORY: https://github.com/eclipse/jkube.git
-  JKUBE_REVISION: master
+  JKUBE_REPOSITORY: https://github.com/rohanKanojia/jkube.git
+  JKUBE_REVISION: pr/spring-build-image-exec
 
 jobs:
   build-jkube:
@@ -82,14 +82,22 @@ jobs:
       fail-fast: false
       matrix:
         kubernetes: [v1.25.13,v1.28.1]
+        java-version: ['11']
         suite: ['quarkus','quarkus-native','springboot','webapp','other','dockerfile']
+        include:
+          - java-version: '17'
+            kubernetes: v1.22.17
+            suite: 'springboot-native'
+          - java-version: '17'
+            kubernetes: v1.25.4
+            suite: 'springboot-native'
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
       - name: Setup Java 11
         uses: actions/setup-java@0ab4596768b603586c0de567f2430c30f5b0d2b0
         with:
-          java-version: '11'
+          java-version: ${{ matrix.java-version }}
           distribution: 'temurin'
       - name: Cache configuration
         uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84

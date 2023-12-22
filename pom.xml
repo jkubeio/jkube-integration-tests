@@ -52,6 +52,8 @@
     <slf4j.version>2.0.7</slf4j.version>
     <spring-boot.version>2.7.5</spring-boot.version>
     <spring-boot.fat-jar.version>2.3.9.RELEASE</spring-boot.fat-jar.version>
+    <spring-boot3.version>3.1.2</spring-boot3.version>
+    <native-maven-plugin.version>0.9.23</native-maven-plugin.version>
     <thorntail.version>2.7.0.Final</thorntail.version>
     <vertx.version>4.4.5</vertx.version>
     <vertx.plugin.version>1.0.28</vertx.plugin.version>
@@ -391,6 +393,35 @@
             <configuration>
               <includes>
                 <include>**/integrationtests/springboot/**/*ITCase.java</include>
+              </includes>
+              <excludes>
+                <exclude>**/integrationtests/springboot/na7ive/NativeK8sITCase.java</exclude>
+              </excludes>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>springboot-native</id>
+      <modules>
+        <module>projects-to-be-tested/maven/spring/native</module>
+      </modules>
+      <activation>
+        <file>
+          <exists>
+            projects-to-be-tested/maven/spring/native/target
+          </exists>
+        </file>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <configuration>
+              <includes>
+                <include>**/integrationtests/springboot/na7ive/**/*ITCase.java</include>
               </includes>
             </configuration>
           </plugin>
