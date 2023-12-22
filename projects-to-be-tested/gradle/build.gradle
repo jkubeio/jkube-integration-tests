@@ -17,8 +17,8 @@ allprojects {
 
   ext {
     jkube_version = project.hasProperty('jkubeVersion') ? project.getProperty('jkubeVersion') : '1.14-SNAPSHOT'
-    spring_boot_version = '2.6.7'
-    spring_boot_dependency_management_version = '1.0.11.RELEASE'
+    spring_boot_version = '2.7.15'
+    spring_boot_dependency_management_version = '1.0.15.RELEASE'
   }
 
   repositories {
