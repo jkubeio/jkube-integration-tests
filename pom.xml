@@ -59,7 +59,7 @@
     <thorntail.version>2.7.0.Final</thorntail.version>
     <vertx.version>4.4.5</vertx.version>
     <vertx.plugin.version>1.0.28</vertx.plugin.version>
-    <wildfly.jar.plugin.version>2.0.1.Final</wildfly.jar.plugin.version>
+    <wildfly.jar.plugin.version>10.0.0.Final</wildfly.jar.plugin.version>
     <version.org.jboss.spec.javax.ws.jboss-jaxrs-api_2.1_spec>2.0.2.Final</version.org.jboss.spec.javax.ws.jboss-jaxrs-api_2.1_spec>
   </properties>
 
