@@ -51,7 +51,7 @@
     <karaf.version>4.4.4</karaf.version>
     <license-maven-plugin.version>4.2</license-maven-plugin.version>
     <openliberty.version>23.0.0.9</openliberty.version>
-    <openliberty.plugin.version>3.0.1</openliberty.plugin.version>
+    <openliberty.plugin.version>3.10</openliberty.plugin.version>
     <quarkus.version>3.2.3.Final</quarkus.version>
     <slf4j.version>2.0.7</slf4j.version>
     <spring-boot.version>2.7.11</spring-boot.version>
