@@ -49,7 +49,7 @@
     <jkube.version>1.17-SNAPSHOT</jkube.version>
     <junit.version>5.10.0</junit.version>
     <karaf.version>4.4.4</karaf.version>
-    <license-maven-plugin.version>4.2</license-maven-plugin.version>
+    <license-maven-plugin.version>4.3</license-maven-plugin.version>
     <openliberty.version>23.0.0.9</openliberty.version>
     <openliberty.plugin.version>3.0.1</openliberty.plugin.version>
     <quarkus.version>3.2.3.Final</quarkus.version>
